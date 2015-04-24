@@ -1,0 +1,12 @@
+{
+    "options": {
+        "separator": "\n\n"
+    },
+    "dist": {
+        "src": [
+          "src/kin.js",
+          "src/kin-export.js"
+        ],
+        "dest": "dist/kin-node.js"
+    }
+}

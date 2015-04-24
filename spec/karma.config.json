@@ -1,0 +1,27 @@
+{
+    "basePath": "",
+
+    "frameworks": ["jasmine"],
+
+    "reporters": ["progress", "coverage"],
+
+    "browsers": ["PhantomJS"],
+
+    "files": [
+        "../src/**/*.js",
+        "./**/*-spec.js"
+    ],
+
+    "preprocessors": {
+        "../src/**/*.js": ["coverage"]
+    },
+
+    "coverageReporter": {
+        "type": "text-summary"
+    },
+
+    "colors": true,
+
+    "autoWatch": false,
+    "singleRun": true
+}
