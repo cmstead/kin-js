@@ -8,14 +8,14 @@ Kin.js is an object inheritance, composition, introspection and reflection libra
 - Accepts a definition for a parent and child object
 - Updates the child object with the prototype of the parent
 - Merges the properties of the child object into the prototype of the new object
-- Sets the constructor to the child constrcutor function
+- Sets the constructor to the child constructor function
 - Returns a new, fully inherited object which news up to an instance of both the parent and the child
 - Throws an error property key collision
 - Throws an error if either provided object has no prototype or prototype.constructor
 
 *kin.extend*
 
-- Accepts a defition for a core object and an object containing exptension properties
+- Accepts a defition for a core object and an object containing extension properties
 - Creates a new object that is a child of the original definition object
 - Throws an error on property key collision
 - Throws an error if parent object has no prototype or prototype.constructor
