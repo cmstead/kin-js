@@ -3,7 +3,7 @@ Kin.js is an object inheritance, composition, introspection and reflection libra
 
 ##Here's the hitlist:
 
-*kin.inherit*
+*kin.inherit (Complete)*
 
 - Accepts a definition for a parent and child object
 - Updates the child object with the prototype of the parent
@@ -13,7 +13,7 @@ Kin.js is an object inheritance, composition, introspection and reflection libra
 - Throws an error property key collision
 - Throws an error if either provided object has no prototype or prototype.constructor
 
-*kin.extend*
+*kin.extend (Complete)*
 
 - Accepts a defition for a core object and an object containing extension properties
 - Creates a new object that is a child of the original definition object
@@ -22,13 +22,13 @@ Kin.js is an object inheritance, composition, introspection and reflection libra
 - Throws an error if extension object is an array
 - Throws an error if extension object is not an object
 
-*kin.merge*
+*kin.merge (Complete)*
 
 - Accepts two object pointers
 - Merges values from second object into first
 - Throws an error if either object is unacceptable (array or non-object)
 
-*kin.compose*
+*kin.compose (Complete)*
 
 - Accepts two objects
 - Composes the two objects into a new instantiable object
