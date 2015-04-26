@@ -4,7 +4,9 @@
     },
     "dist": {
         "src": [
-          "src/kin.js",
+          "src/kin-reflection.js",
+          "src/kin-util.js",
+          "src/kin-inheritance.js",
           "src/kin-export.js"
         ],
         "dest": "dist/kin-node.js"

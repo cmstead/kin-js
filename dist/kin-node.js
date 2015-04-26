@@ -1,5 +1,4 @@
 var kin = (function(){
-
     function isObject(obj){
         var isObj = typeof obj === 'object',
             isNull = obj === null,
@@ -15,6 +14,18 @@ var kin = (function(){
 
         return hasConstructor;
     }
+
+    return {
+        isObject: isObject,
+        isNewable: isNewable
+    };
+})();
+
+
+(function($kin){
+
+    isObject = $kin.isObject;
+    isNewable = $kin.isNewable;
 
     function checkCollision(key, obj){
         return key === 'constructor' || typeof obj[key] === 'undefined';
@@ -34,6 +45,21 @@ var kin = (function(){
             return userFn.apply(null, finalArgs);
         };
     }
+
+    $kin.checkCollision = checkCollision;
+    $kin.checkValue = checkValue;
+    $kin.partial = partial;
+
+})(kin);
+
+
+(function($kin){
+
+    isObject = $kin.isObject;
+    isNewable = $kin.isNewable;
+    checkCollision = $kin.checkCollision;
+    checkValue = $kin.checkValue;
+    partial = $kin.partial;
 
     function merge(receiver, provider){
         var providerKeys = Object.keys(provider),
@@ -94,10 +120,9 @@ var kin = (function(){
         return NewObj;
     }
 
-    return {
-        compose: compose,
-        extend: extend,
-        inherit: inherit,
-        merge: merge
-    };
-})();
+
+    $kin.compose = compose;
+    $kin.extend = extend;
+    $kin.inherit = inherit;
+    $kin.merge = merge;
+})(kin);

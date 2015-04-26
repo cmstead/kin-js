@@ -8,8 +8,10 @@
     "browsers": ["PhantomJS"],
 
     "files": [
-        "../src/**/*.js",
-        "./**/*-spec.js"
+      "../src/kin-reflection.js",
+      "../src/kin-util.js",
+      "../src/kin-inheritance.js",
+      "./**/*-spec.js"
     ],
 
     "preprocessors": {

@@ -6,7 +6,11 @@
     },
     "dist": {
         "files": {
-            "dist/<%= pkg.name %>.min.js": ["src/<%= pkg.name %>.js"]
+            "dist/<%= pkg.name %>.min.js": [
+              "src/kin-reflection.js",
+              "src/kin-util.js",
+              "src/kin-inheritance.js"
+            ]
         }
     }
 }
